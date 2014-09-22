@@ -3,12 +3,8 @@
 # Recipe:: default
 #
 
-package 'rubygems'
-
-execute 'Update Gems' do
-  command 'gem update --system'
-  action :run
-end
+package 'ruby'
+package 'ruby-dev'
 
 execute 'Install Sass' do
   command 'gem install sass'
