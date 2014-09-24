@@ -10,6 +10,7 @@ default_action :compile
 attribute :name, kind_of: String, name_attribute: true
 attribute :path, kind_of: String, default: nil
 attribute :environment, kind_of: String, default: nil
+attribute :user, kind_of: String, default: 'root'
 
 def path(arg = nil)
   if arg.nil? && @path.nil?

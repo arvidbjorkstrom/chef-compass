@@ -15,6 +15,7 @@ action :compile do
 
   execute "Compile #{new_resource.name} with Compass" do
     command "compass compile #{new_resource.path} -e #{new_resource.environment}" # rubocop:disable LineLength
+    user new_resource.user
     action :run
   end
 
