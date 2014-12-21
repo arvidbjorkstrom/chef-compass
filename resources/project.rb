@@ -25,7 +25,7 @@ def environment(arg = nil)
     set_or_return(:environment, arg, kind_of: String)
     return
   end
-  if node.chef_environment == 'production'
+  if node.chef_environment == 'production' || node.chef_environment == 'prod'
     set_or_return(:environment, node.chef_environment, kind_of: String)
   else
     set_or_return(:environment, 'development', kind_of: String)
