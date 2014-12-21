@@ -1,5 +1,5 @@
 name             'compass'
-maintainer       'Arvid Björkström'
+maintainer       'Arvid Bjorkstrom'
 maintainer_email 'arvid@bjorkstrom.se'
 license          'MIT'
 description      'Installs/Configures compass'
